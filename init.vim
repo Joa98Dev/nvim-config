@@ -32,6 +32,7 @@ require'lspconfig'.jsonls.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.jinja_lsp.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.bashls.setup{on_attach=require'completion'.on_attach}
+require'lspconfig'.gdscript.setup{on_attach=require'completion'.on_attach}
 EOF
 
 "--------------------------------------------------------------------------------------
