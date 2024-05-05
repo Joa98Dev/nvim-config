@@ -1,4 +1,5 @@
 syntax enable
+set encoding=utf-8
 set showmatch
 
 call plug#begin('~/.vim/plugged')
@@ -26,7 +27,7 @@ colorscheme gruvbox-material
 " LSP config
 lua << EOF
 require'lspconfig'.kotlin_language_server.setup{on_attach=require'completion'.on_attach}
-require'lspconfig'.html.setup{on_attach=require'completion'.on_attach}
+--require'lspconfig'.html.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.anakin_language_server.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.jsonls.setup{on_attach=require'completion'.on_attach}
 require'lspconfig'.tsserver.setup{on_attach=require'completion'.on_attach}
